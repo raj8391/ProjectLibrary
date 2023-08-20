@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="StudentModelStoreContainer" CdmEntityContainer="StudentEntities">
+    <EntitySetMapping Name="Std_Login">
+      <EntityTypeMapping TypeName="StudentModel.Std_Login">
+        <MappingFragment StoreEntitySet="Std_Login">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Registration">
+      <EntityTypeMapping TypeName="StudentModel.tbl_Registration">
+        <MappingFragment StoreEntitySet="tbl_Registration">
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_OTP">
+      <EntityTypeMapping TypeName="StudentModel.tbl_OTP">
+        <MappingFragment StoreEntitySet="tbl_OTP">
+          <ScalarProperty Name="OTP" ColumnName="OTP" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="OTPID" ColumnName="OTPID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_CategoryMaster">
+      <EntityTypeMapping TypeName="StudentModel.tbl_CategoryMaster">
+        <MappingFragment StoreEntitySet="tbl_CategoryMaster">
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_CollegeMaster">
+      <EntityTypeMapping TypeName="StudentModel.tbl_CollegeMaster">
+        <MappingFragment StoreEntitySet="tbl_CollegeMaster">
+          <ScalarProperty Name="CollegeName" ColumnName="CollegeName" />
+          <ScalarProperty Name="CollegeID" ColumnName="CollegeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_FilesDetails">
+      <EntityTypeMapping TypeName="StudentModel.tbl_FilesDetails">
+        <MappingFragment StoreEntitySet="tbl_FilesDetails">
+          <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="SynopsisID" ColumnName="SynopsisID" />
+          <ScalarProperty Name="FileID" ColumnName="FileID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SynopsisDetails">
+      <EntityTypeMapping TypeName="StudentModel.tbl_SynopsisDetails">
+        <MappingFragment StoreEntitySet="tbl_SynopsisDetails">
+          <ScalarProperty Name="SynaopsisDescription" ColumnName="SynaopsisDescription" />
+          <ScalarProperty Name="SynaopsisHeader" ColumnName="SynaopsisHeader" />
+          <ScalarProperty Name="CollegeID" ColumnName="CollegeID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="SynopsisID" ColumnName="SynopsisID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

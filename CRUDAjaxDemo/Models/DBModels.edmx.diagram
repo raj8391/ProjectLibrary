@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a29ea5b67dc541a699dd859396cdc008" Name="Diagram1">
+        <EntityTypeShape EntityType="StudentModel.Std_Login" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StudentModel.tbl_Registration" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="StudentModel.tbl_OTP" Width="1.5" PointX="5.625" PointY="0.875" />
+        <AssociationConnector Association="StudentModel.FK__tbl_OTP__UserID__34C8D9D1" />
+        <EntityTypeShape EntityType="StudentModel.tbl_CategoryMaster" Width="1.5" PointX="6.375" PointY="6.875" />
+        <EntityTypeShape EntityType="StudentModel.tbl_CollegeMaster" Width="1.5" PointX="6.375" PointY="4.625" />
+        <EntityTypeShape EntityType="StudentModel.tbl_FilesDetails" Width="1.5" PointX="10.875" PointY="3.625" />
+        <EntityTypeShape EntityType="StudentModel.tbl_SynopsisDetails" Width="1.5" PointX="8.625" PointY="3.125" />
+        <AssociationConnector Association="StudentModel.FK__tbl_Synop__Categ__5FB337D6" />
+        <AssociationConnector Association="StudentModel.FK__tbl_Synop__Colle__60A75C0F" />
+        <AssociationConnector Association="StudentModel.FK__tbl_Files__Synop__6383C8BA" />
+        <AssociationConnector Association="StudentModel.FK__tbl_Synop__UserI__5EBF139D" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
